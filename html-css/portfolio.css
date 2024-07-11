@@ -1,0 +1,19 @@
+h1 {
+    color: rgb(0, 0, 0);
+    /* Adicionar mais estilos conforme necessário */
+}
+p {
+    color: rgb(0, 0, 0);
+    /* Adicionar mais estilos conforme necessário */
+}
+button {
+    background-color: ciano;
+    color: white;
+    border: none;
+    /* Adicionar mais estilos conforme necessário */
+}
+img {
+    display: flex;
+    margin-right: auto;
+}
+/* Adicionar mais estilos conforme necessário */

@@ -1,9 +1,19 @@
+body{
+    background-color: #134B70;
+    color: #f6f6f6; /* para deixar todo os textos branco, mas os
+     são mais específicos*/
+}
+header {
+    background-color: #201E43;
+    color: white;
+    /* Adicionar mais estilos conforme necessário */
+}
 h1 {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     /* Adicionar mais estilos conforme necessário */
 }
 p {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     /* Adicionar mais estilos conforme necessário */
 }
 button {
@@ -16,4 +26,29 @@ img {
     display: flex;
     margin-right: auto;
 }
-/* Adicionar mais estilos conforme necessário */
+
+#imagem{
+    display: flex;
+    margin-right: auto;
+    width: 50%;
+    height: 20%;
+}
+#perfil{
+    display: flex;
+    margin-top: auto;
+    width: 10%;
+    height: 10%;
+}
+footer{
+    background-color: #508C9B;
+    color: white;
+    /* Adicionar mais estilos conforme necessário */
+}
+strong{
+    color: #22D4FD;
+}
+span{
+    color: #22D4FD;
+    border: 1px solid #22D4FD;
+    padding: 10px;
+}

@@ -9,7 +9,7 @@ const output = document.getElementById("output_text_output");
 const image = document.getElementById("output_text_image");
 const copybtn = document.getElementById("output_text_copyBtn");
 
-copybtn.style.display = "none";
+copyBtn.style.display = "none";
 
 function criptografar() {
     let text = document.querySelector("input").value;
@@ -33,10 +33,9 @@ function criptografar() {
             criptografado += text[i];
         }
     }
-    output.innerHTML = criptografado; 
-    copybtn.style.display = "block";
-    image.style.display = "none";
-    return;
+    output.innerHTML = criptografado;
+    copyBtn.style.display = "block";
+    image.style.display = "none"
 }
 
 function descriptografar() {
@@ -67,13 +66,12 @@ function descriptografar() {
         }
     }
     output.innerHTML = descriptografado;
-    image.style.display = "none";
-    copybtn.style.display = "block";
-
-    return;
+    copyBtn.style.visibility = "visible";    
+    image.style.visibility = "hidden";
 }
 
 function copy() {
     navigator.clipboard.writeText(output.innerHTML);
+    location.reload();
 }
 

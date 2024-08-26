@@ -66,12 +66,9 @@ top: 2.5rem;
         /* Button */
 
     /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 24px;
+    align-items: center;
+    padding: 20px;
     gap: 8px;
-
     width: 20.5rem;
     height: 4.2rem;
 
@@ -87,6 +84,7 @@ top: 2.5rem;
     /* Text layout */
     text-align: center;
     font: normal normal normal 16px/24px Poppins;
+    color: var(--buttonDecript-color);
 
 }
 
@@ -96,9 +94,7 @@ top: 2.5rem;
     box-sizing: border-box;
 
     /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     padding: 24px;
     gap: 8px;
 
@@ -119,6 +115,7 @@ top: 2.5rem;
     /* Text layout */
     text-align: center;
     font: normal normal normal 16px/24px Poppins;
+    color: var(--buttonCript-color);
 
 }
 
@@ -139,27 +136,27 @@ top: 2.5rem;
 }
 
 .output_text_copyBtn {
-    /* Button */
-
-box-sizing: border-box;
-
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 24px;
-gap: 8px;
-
-position: absolute;
-width: 21rem;
-height: 4.2rem;
-left: 64.5rem;
-top: 55.31rem;
-
-/* Dark blue/dark-blue-300 */
-border: 1px solid var(--buttonCript-color);
-border-radius: 24px;
-
+        /* Button */
+    
+    box-sizing: border-box;
+    
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    
+    position: bottom;
+    width: 21rem;
+    height: 4.2rem;
+    left: 64.5rem;
+    top: 55.31rem;
+    
+    /* Dark blue/dark-blue-300 */
+    border: 1px solid var(--buttonCript-color);
+    border-radius: 24px;
+    
 }
 
 .footer {

@@ -214,6 +214,13 @@ top: 2.5rem;
 }
 
 @media (max-width: 768px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+    }
     .container {
         display: flex;
         flex-direction: column;

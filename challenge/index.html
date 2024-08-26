@@ -4,12 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador|Alura challenge</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <header></header>
-    <main></main>
+    <main>
+        <h1>Decodificador de texto</h1>
+        <section>
+            <div id="input_text">
+                <h2>Escreva seu texto:</h2>
+                <form>
+                    <label for="input">Digite o texto a ser decodificado:</label>
+                    <input type="text" id="input" name="input">
+                    <button type="submit" onclick="Criptografar()">Criptografar</button>
+                    <button type="submit" onclick="Descriptografar()">Descriptografar</button>
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </form>
+            </div>
+            <div id="output_text">
+                <img class="output_text_image" src="images/output.png" alt="procurando um texto para descriptografar">
+                <p class="output_text_output"></p>
+                <button class="output_text_copyBtn" type="submit">Copiar</button>
+            </div>
+        </section>
+    </main>
     <footer></footer>
 </body>
 </html>

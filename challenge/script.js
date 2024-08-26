@@ -5,11 +5,13 @@ i >> imes
 o >> ober
 u >> ufat*/
 
-const output = document.getElementById("output_text_output");
+const message = document.getElementById("output_text_message");
 const image = document.getElementById("output_text_image");
 const copybtn = document.getElementById("output_text_copyBtn");
+const output = document.getElementById("output_text");
 
-copyBtn.style.display = "none";
+copybtn.style.visibility = "hidden";
+output.style.visibility = "hidden";
 
 function criptografar() {
     let text = document.querySelector("input").value;
@@ -34,8 +36,10 @@ function criptografar() {
         }
     }
     output.innerHTML = criptografado;
-    copyBtn.style.display = "block";
-    image.style.display = "none"
+    output.style.visibility = "visible";
+    message.style.visibility = "hidden";
+    copybtn.style.visibility = "visible";
+    image.style.visibility =  "hidden";
 }
 
 function descriptografar() {
@@ -66,7 +70,9 @@ function descriptografar() {
         }
     }
     output.innerHTML = descriptografado;
-    copyBtn.style.visibility = "visible";    
+    output.style.visibility = "visible";
+    message.style.visibility = "hidden";
+    copybtn.style.visibility = "visible";    
     image.style.visibility = "hidden";
 }
 

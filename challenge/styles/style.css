@@ -15,7 +15,9 @@ body {
     width: auto;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    font-weight: 800;
     background-color: var(--background-color);
+    text-size-adjust: 100%;
 }
 
 .titulo{
@@ -54,6 +56,20 @@ top: 2.5rem;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
 }
 
+.input_text_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.input_text_alert{
+    display:flex;
+    gap: 5px
+}
+
 .input_text_buttons {
     display: flex;
     flex-direction: row;
@@ -69,11 +85,12 @@ top: 2.5rem;
     align-items: center;
     padding: 20px;
     gap: 8px;
-    width: 20.5rem;
+    width: 50%;
     height: 4.2rem;
 
     /* Dark blue/dark-blue-300 */
     background: var(--buttonCript-color);
+    border: 1px solid #0A3871;
     border-radius: 24px;
 
     /* Inside auto layout */
@@ -85,7 +102,13 @@ top: 2.5rem;
     text-align: center;
     font: normal normal normal 16px/24px Poppins;
     color: var(--buttonDecript-color);
+    padding: 21.5px 5px;
 
+}
+
+.criptBtn:hover{
+    background-color: #17457e;
+    color: #D8DFE8;
 }
 
 .decriptBtn{
@@ -98,7 +121,7 @@ top: 2.5rem;
     padding: 24px;
     gap: 8px;
 
-    width: 20.5rem;
+    width: 50%;
     height: 4.2rem;
 
     /* Light gray */
@@ -116,7 +139,12 @@ top: 2.5rem;
     text-align: center;
     font: normal normal normal 16px/24px Poppins;
     color: var(--buttonCript-color);
+    padding: 21.5px 5px;
+}
 
+.decriptBtn:hover{
+    background-color: #b4c2d4;
+    color: #0A3871;
 }
 
 .output_text{
@@ -131,8 +159,19 @@ top: 2.5rem;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
 }
 
+.output_text_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    width: 100%;
+    height: auto;
+    border: 5px solid black;
+}
+
 .output_text_image {
     border-radius: 5% 5% 5% 5%;
+    width: 100%;
 }
 
 .output_text_copyBtn {
@@ -143,12 +182,11 @@ top: 2.5rem;
     /* Auto layout */
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    padding: 24px;
+    align-items: center;
     gap: 8px;
     
     position: bottom;
-    width: 21rem;
+    width: 50%;
     height: 4.2rem;
     left: 64.5rem;
     top: 55.31rem;
@@ -156,6 +194,12 @@ top: 2.5rem;
     /* Dark blue/dark-blue-300 */
     border: 1px solid var(--buttonCript-color);
     border-radius: 24px;
+
+    /* Text */
+    text-align: center;
+    font: normal normal normal 16px/24px Poppins;
+    color: var(--buttonCript-color);
+    padding: 21.5px 5px 
     
 }
 

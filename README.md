@@ -4,4 +4,4 @@ Primeiro projeto em iniciando na programação - Jogo do número secreto
 
 Página de portfólio, flexbox (html-css): https://curso-alura-one-iota.vercel.app/
 
-Página do cahlenge: https://chalenge-decodificador.vercel.app/
+Página do challenge: https://chalenge-decodificador.vercel.app/

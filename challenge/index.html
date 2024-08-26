@@ -5,30 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador|Alura challenge</title>
     <link rel="stylesheet" href="styles/style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <header></header>
     <main>
         <h1>Decodificador de texto</h1>
-        <section>
-            <div id="input_text">
+        <section class="container">
+            <div class="input_text">
                 <h2>Escreva seu texto:</h2>
                 <form>
                     <label for="input">Digite o texto a ser decodificado:</label>
                     <input type="text" id="input" name="input">
-                    <button type="submit" onclick="Criptografar()">Criptografar</button>
-                    <button type="submit" onclick="Descriptografar()">Descriptografar</button>
+                    <button type="submit" onclick="criptografar()">Criptografar</button>
+                    <button type="submit" onclick="descriptografar()">Descriptografar</button>
                     <p>Apenas letras minúsculas e sem acento.</p>
                 </form>
             </div>
-            <div id="output_text">
-                <img class="output_text_image" src="images/output.png" alt="procurando um texto para descriptografar">
-                <p class="output_text_output"></p>
-                <button class="output_text_copyBtn" type="submit">Copiar</button>
+            <div class="output_text">
+                <img id="output_text_image" src="images/output.png" alt="procurando um texto para descriptografar">
+                <p id="output_text_output">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <button id="output_text_copyBtn" type="submit" onclick="copy()"">Copiar</button>
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <p>Desenvolvido por JPKP-Kuhn</p>
+        <img src="images/github.png" alt="Github logo">
+        <a href="https://github.com/JPKP-Kuhn/Curso-Alura-One">Github</a>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

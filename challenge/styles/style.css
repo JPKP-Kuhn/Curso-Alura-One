@@ -61,8 +61,9 @@ top: 2.5rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: auto;
+    width: 90%;
+    height: 150px;
+    box-sizing: border-box;
 }
 
 .input_text_alert{
@@ -166,7 +167,7 @@ top: 2.5rem;
     align-items: center;
     width: 100%;
     height: auto;
-    border: 5px solid black;
+    box-sizing: border-box;
 }
 
 .output_text_image {
@@ -210,4 +211,14 @@ top: 2.5rem;
     height: 10vh;
     gap: 10px;
     background-color: var(--background-color);
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
 }

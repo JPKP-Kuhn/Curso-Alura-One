@@ -14,7 +14,7 @@ copybtn.style.visibility = "hidden";
 output.style.visibility = "hidden";
 
 function criptografar() {
-    let text = document.querySelector("input").value;
+    let text = document.getElementById("input_text").value;
     if (text == "") {
         alert("Digite um texto para ser criptografado!");
         return;
@@ -43,7 +43,7 @@ function criptografar() {
 }
 
 function descriptografar() {
-    let text = document.querySelector("input").value;
+    let text = document.getElementById("input_text").value;
     if (text == "") {
         alert("Digite um texto para ser descriptografado!");
         return;

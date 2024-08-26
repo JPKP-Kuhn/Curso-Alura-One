@@ -7,14 +7,11 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header></header>
+    <header><h1 class="titulo">Decodificador de texto</h1></header>
     <main>
-        <h1 class="titulo">Decodificador de texto</h1>
         <section class="container">
             <div class="input_text">
-                <h2>Escreva seu texto:</h2>
-            
-                <input type="text" id="input" class="input_text_box" name="input">
+                <textarea id="input_text" class="input_text_box" name="input_text" placeholder="Digite um texto para criptografar ou descriptografar."></textarea>
                 <div class="input_text_alert">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
@@ -25,7 +22,6 @@
                     <button type="submit" class="criptBtn" id="criptBtn" onclick="criptografar()">Criptografar</button>
                     <button type="submit" class="decriptBtn" id="decriptBtn" onclick="descriptografar()">Descriptografar</button>
                 </div>
-            
             </div>
             <div class="output_text">
                 <textarea id="output_text" class="output_text_box" name="output_text" readonly></textarea>

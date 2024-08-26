@@ -1,6 +1,8 @@
 :root {
     --background-color: #E5E5E5;
     --second-color: rgb(14, 14, 129);
+    --buttonCript-color: #0A3871;
+    --buttonDecript-color: #D8DFE8;
 }
 
 *{
@@ -10,8 +12,27 @@
 }
 
 body {
+    width: auto;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
+}
+
+.titulo{
+    /* Frame 6 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
+
+position: absolute;
+width: 7.5rem;
+height: 3rem;
+left: 2.5rem;
+top: 2.5rem;
 }
 
 .container {
@@ -27,8 +48,8 @@ body {
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 50%;
-    background-color: white;
+    height: 100%;
+    background-color: var(--background-color);
     border-radius: 5%;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
 }
@@ -51,17 +72,21 @@ body {
     padding: 24px;
     gap: 8px;
 
-    width: 328px;
-    height: 67px;
+    width: 20.5rem;
+    height: 4.2rem;
 
     /* Dark blue/dark-blue-300 */
-    background: #0A3871;
+    background: var(--buttonCript-color);
     border-radius: 24px;
 
     /* Inside auto layout */
     flex: none;
     order: 0;
     flex-grow: 0;
+
+    /* Text layout */
+    text-align: center;
+    font: normal normal normal 16px/24px Poppins;
 
 }
 
@@ -77,11 +102,11 @@ body {
     padding: 24px;
     gap: 8px;
 
-    width: 328px;
-    height: 67px;
+    width: 20.5rem;
+    height: 4.2rem;
 
     /* Light gray */
-    background: #D8DFE8;
+    background: var(--buttonDecript-color);
     /* Dark blue/dark-blue-300 */
     border: 1px solid #0A3871;
     border-radius: 24px;
@@ -91,6 +116,10 @@ body {
     order: 1;
     flex-grow: 0;
 
+    /* Text layout */
+    text-align: center;
+    font: normal normal normal 16px/24px Poppins;
+
 }
 
 .output_text{
@@ -99,7 +128,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 50%;
+    height: 100%;
     background-color: white;
     border-radius: 5%;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
@@ -109,10 +138,35 @@ body {
     border-radius: 5% 5% 5% 5%;
 }
 
+.output_text_copyBtn {
+    /* Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 24px;
+gap: 8px;
+
+position: absolute;
+width: 21rem;
+height: 4.2rem;
+left: 64.5rem;
+top: 55.31rem;
+
+/* Dark blue/dark-blue-300 */
+border: 1px solid var(--buttonCript-color);
+border-radius: 24px;
+
+}
+
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 10vh;
+    gap: 10px;
     background-color: var(--background-color);
 }

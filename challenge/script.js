@@ -5,15 +5,18 @@ i >> imes
 o >> ober
 u >> ufat*/
 
-let output = document.getElementById("output_text_output");
-let image = document.getElementById("output_text_image");
-let copybtn = document.getElementById("output_text_copyBtn");
+const output = document.getElementById("output_text_output");
+const image = document.getElementById("output_text_image");
+const copybtn = document.getElementById("output_text_copyBtn");
 
 copybtn.style.display = "none";
 
-
 function criptografar() {
     let text = document.querySelector("input").value;
+    if (text == "") {
+        alert("Digite um texto para ser criptografado!");
+        return;
+    }
     let criptografado = "";
     for (let i = 0; i < text.length; i++) {
         if (text[i] == "a") {
@@ -38,6 +41,10 @@ function criptografar() {
 
 function descriptografar() {
     let text = document.querySelector("input").value;
+    if (text == "") {
+        alert("Digite um texto para ser descriptografado!");
+        return;
+    }
     let descriptografado = "";
     for (let i = 0; i < text.length; i++) {
         if (text[i] == "a" && text[i+1] == "i") {
@@ -59,13 +66,14 @@ function descriptografar() {
             descriptografado += text[i];
         }
     }
+    output.innerHTML = descriptografado;
+    image.style.display = "none";
+    copybtn.style.display = "block";
 
-    alert(output.innerHTML = descriptografado);
-    
     return;
 }
 
 function copy() {
-    navigator.clipboard.writeText(copybtn.innerHTML);
+    navigator.clipboard.writeText(output.innerHTML);
 }
 

@@ -16,9 +16,11 @@
                 <form>
                     <label for="input">Digite o texto a ser decodificado:</label>
                     <input type="text" id="input" name="input">
-                    <button type="submit" onclick="criptografar()">Criptografar</button>
-                    <button type="submit" onclick="descriptografar()">Descriptografar</button>
                     <p>Apenas letras minúsculas e sem acento.</p>
+                    <div class="input_text_buttons">
+                        <button type="submit" class="criptBtn" onclick="criptografar()">Criptografar</button>
+                        <button type="submit" class="decriptBtn" onclick="descriptografar()">Descriptografar</button>
+                    </div>
                 </form>
             </div>
             <div class="output_text">
